@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from qna_app import views
 
 urlpatterns = [
-    
+    path('view/',views.question),
+    path('popular/',views.popular)
 ]
